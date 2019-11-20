@@ -30,7 +30,6 @@ Omega::Omega() {
   _upDebouncer = Bounce();
   _leftDebouncer = Bounce();
   _downDebouncer = Bounce();
-  _omegaReady = false;
 }
 
 void Omega::init() {
@@ -67,8 +66,6 @@ void Omega::splash() {
   matrix.drawRect(0, 0, 8, 8, LED_OFF);
   matrix.writeDisplay();
   delay(500);
-
-  _omegaReady = true;
 }
 
 int Omega::poll() {

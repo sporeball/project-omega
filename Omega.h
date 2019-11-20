@@ -27,7 +27,6 @@ class Omega {
     Bounce _upDebouncer;
     Bounce _leftDebouncer;
     Bounce _downDebouncer;
-    bool _omegaReady;
 };
 
 #endif
