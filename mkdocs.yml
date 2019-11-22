@@ -1,0 +1,7 @@
+site_name: Project Omega
+theme: readthedocs
+nav:
+- Home:
+  - "Index": "index.md"
+  - "Test": "test.md"
+extra_css: [extra.css]
