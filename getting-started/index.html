@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Getting started - Project OMEGA</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../res/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Getting started";
+    var mkdocs_page_input_path = "getting-started.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Project OMEGA</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Home</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="..">About</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tutorials</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">Getting started</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#getting-started">Getting started</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#setup">Setup</a></li>
+        
+            <li><a class="toctree-l4" href="#importing-the-library">Importing the library</a></li>
+        
+            <li><a class="toctree-l4" href="#the-setup-function">The setup function</a></li>
+        
+            <li><a class="toctree-l4" href="#the-loop-function">The loop function</a></li>
+        
+            <li><a class="toctree-l4" href="#the-final-result">The final result</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Project OMEGA</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Tutorials &raquo;</li>
+        
+      
+    
+    <li>Getting started</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="getting-started">Getting started</h1>
+<p>This tutorial will act as a step-by-step guide to get you writing and running your first Project OMEGA game.</p>
+<h2 id="setup">Setup</h2>
+<p>Make sure you've installed the Arduino IDE for your operating system of choice before continuing. From there, you'll need to install Project OMEGA's dependencies:</p>
+<ul>
+<li><a href="https://github.com/adafruit/Adafruit-GFX-Library">Adafruit_GFX</a></li>
+<li><a href="https://github.com/adafruit/Adafruit_LED_Backpack">Adafruit_LEDBackpack</a></li>
+<li><a href="https://github.com/thomasfredericks/Bounce2">Bounce2</a></li>
+</ul>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>The version of the Bounce2 library that's hosted at the provided GitHub link <strong>will not work</strong> with Project OMEGA. Be sure to install it through the Arduino IDE, in Tools &gt; Manage Libraries.</p>
+</div>
+<p>After everything is installed, open up a blank sketch in the Arduino IDE. You should see the standard <code>setup()</code> and <code>loop()</code> functions. Don't worry about these for now; we'll get to them in a moment.</p>
+<h2 id="importing-the-library">Importing the library</h2>
+<p>To import the Project OMEGA library, add the following lines just before the <code>setup()</code> function:</p>
+<pre><code>#include &lt;Omega.h&gt;
+Omega omega = Omega();
+</code></pre>
+
+<p>The first line actually imports the definitions added by the library; the second line creates an object named <code>omega</code> with the same definitions. You'll use this object in your game code later on.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>omega</code> is the recommended name for the object, though you can change it to any other name you'd like.</p>
+</div>
+<h2 id="the-setup-function">The setup function</h2>
+<p>The <code>setup()</code> function will run just once, at the beginning of your sketch's execution.</p>
+<p>Add the line <code>omega.init();</code> inside it. This is used to set up the board's buttons and display; as such, your program will not run without it.</p>
+<p>If you'd like, you can call the <code>splash()</code> function after this, using <code>omega.splash();</code>. This is completely optional, though recommended. With this change, a bitmap of the Greek letter omega will be drawn to the display before your game code starts to execute.</p>
+<p>Finally, we should try drawing something to the display. Add the following lines of code to the end of the function:</p>
+<pre><code>omega.matrix.clear();
+omega.matrix.drawPixel(0, 0, LED_ON);
+omega.matrix.writeDisplay();
+</code></pre>
+
+<p>This will use methods added by Adafruit's graphics library to clear the display and light up the pixel in the top left corner.</p>
+<h2 id="the-loop-function">The loop function</h2>
+<p>To make proper use of the <code>loop()</code> function, we'll have to use one more OMEGA-defined method: <code>omega.poll()</code>. This will repeatedly return an integer from 4 to 8 back to your code if a button was pressed, and 0 otherwise. You'll need to write your own function to determine how this should make your game behave.</p>
+<p>Add the following function definition to your Arduino sketch, before <code>void loop()</code>:</p>
+<pre><code>void poll() {
+  switch (omega.poll()) {
+    case 0:
+      break;
+    default:
+      omega.matrix.drawPixel(0, 0, LED_OFF);
+      omega.matrix.writeDisplay();
+      delay(125);
+  }
+
+  omega.matrix.clear();
+  omega.matrix.drawPixel(0, 0, LED_ON);
+  omega.matrix.writeDisplay();
+}
+</code></pre>
+
+<p>This function is actually pretty simple! The <code>switch</code> keyword says to do something depending on the output of what's in the parentheses &mdash; in this case, a call to <code>omega.poll()</code>. We do nothing if it returns a 0, and every other case will do the same thing: turn off the pixel in the top left corner of the display. Outside of the <code>switch</code> block, we then turn it on again after a fraction of a second.</p>
+<p>Finally, we change the <code>loop()</code> function so that it repeatedly calls our new <code>poll()</code> function:</p>
+<pre><code>void loop() {
+  poll();
+}
+</code></pre>
+
+<p>If you set everything up correctly, you should be able to make the top left pixel of the display flash any time you press a button!</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When writing your <code>poll()</code> function, you'll typically want to add a new case for each of the buttons you plan to detect. Remember that these are connected to the numbers 4 through 8, not 0.</p>
+</div>
+<h2 id="the-final-result">The final result</h2>
+<pre><code>#include &lt;Omega.h&gt;
+Omega omega = Omega();
+
+void setup() {
+  omega.init();
+  omega.splash();
+
+  omega.matrix.clear();
+  omega.matrix.drawPixel(0, 0, LED_ON);
+  omega.matrix.writeDisplay();
+}
+
+void poll() {
+  switch (omega.poll()) {
+    case 0:
+      break;
+    default:
+      omega.matrix.drawPixel(0, 0, LED_OFF);
+      omega.matrix.writeDisplay();
+      delay(125);
+  }
+
+  omega.matrix.clear();
+  omega.matrix.drawPixel(0, 0, LED_ON);
+  omega.matrix.writeDisplay();
+}
+
+void loop() {
+  poll();
+}
+</code></pre>
+
+<p>Congratulations! You've just written your first Project OMEGA game.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href=".." class="btn btn-neutral" title="About"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
