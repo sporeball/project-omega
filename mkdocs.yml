@@ -1,7 +1,10 @@
-site_name: Project Omega
+site_name: Project OMEGA
 theme: readthedocs
 nav:
-- Home:
-  - "Index": "index.md"
-  - "Test": "test.md"
-extra_css: [extra.css]
+  - Home:
+    - "About": "index.md"
+  - "Tutorials":
+    - "Getting started": "getting-started.md"
+markdown_extensions:
+  - admonition
+extra_css: [res/extra.css]

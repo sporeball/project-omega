@@ -1,17 +1,13 @@
-# Welcome to MkDocs
+# Welcome
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+Welcome to the documentation of Project OMEGA, [sporeball](https://github.com/sporeball)'s first Arduino project!
 
-## Commands
+## About Project OMEGA
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+Contrary to its name, Project OMEGA is a tiny game console, powered by the [Adafruit METRO Mini](https://www.adafruit.com/product/2590) and an 8x8 LED matrix. The hope is that this minimal setup can result in a board that's easy to write code for and fun to play games with.
 
-## Project layout
+All of the code driving Project OMEGA, as well as this documentation, is [available on GitHub](https://github.com/sporeball/project-omega)! Anyone is welcome to contribute.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Getting started
+
+Check out the [getting started](getting-started.md) tutorial for a step-by-step guide to writing your first game!
