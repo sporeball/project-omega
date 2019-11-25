@@ -6,10 +6,7 @@ project OMEGA (**O**riginal **ME**TRO-based **G**ame **A**pparatus) is my very f
 
 this is still very much a work-in-progress, with more Arduino sketches and a Fritzing diagram coming soon.
 
-### dependencies
-- [Adafruit GFX library](https://github.com/adafruit/Adafruit-GFX-Library)
-- [Adafruit LED backpack library](https://github.com/adafruit/Adafruit_LED_Backpack)
-- [Bounce2](https://github.com/thomasfredericks/Bounce2) (be sure to download using Tools > Manage Libraries in the Arduino IDE)
+[check out the docs](https://sporeball.dev/project-omega) to learn how to get started with project OMEGA!
 
 ### donate
 you can support the development of this project and others via Patreon:
