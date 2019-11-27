@@ -11,3 +11,5 @@ All of the code driving Project OMEGA, as well as this documentation, is [availa
 ## Getting started
 
 Check out the [getting started](getting-started.md) tutorial for a step-by-step guide to writing your first game!
+
+Alternatively, dive straight into the [API reference](api-reference.md) to learn about everything you can do with Project OMEGA.

@@ -5,6 +5,8 @@ nav:
     - "About": "index.md"
   - "Tutorials":
     - "Getting started": "getting-started.md"
+  - "Reference":
+    - "API reference": "api-reference.md"
 markdown_extensions:
   - admonition
 extra_css: [res/extra.css]
