@@ -7,24 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <title>About - Project OMEGA</title>
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>API reference - Project OMEGA</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  <link href="res/extra.css" rel="stylesheet">
+  <link href="../res/extra.css" rel="stylesheet">
   
   <script>
     // Current page data
-    var mkdocs_page_name = "About";
-    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_name = "API reference";
+    var mkdocs_page_input_path = "api-reference.md";
     var mkdocs_page_url = null;
   </script>
   
-  <script src="js/jquery-2.1.1.min.js" defer></script>
-  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
@@ -37,9 +37,9 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Project OMEGA</a>
+        <a href=".." class="icon icon-home"> Project OMEGA</a>
         <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
@@ -53,23 +53,9 @@
 		
     <span class="caption-text">Home</span>
     <ul class="subnav">
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href=".">About</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#welcome">Welcome</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#about-project-omega">About Project OMEGA</a></li>
-        
-            <li><a class="toctree-l4" href="#getting-started">Getting started</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="..">About</a>
                 </li>
     </ul>
 	    </li>
@@ -80,7 +66,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="getting-started/">Getting started</a>
+    <a class="" href="../getting-started/">Getting started</a>
                 </li>
     </ul>
 	    </li>
@@ -89,9 +75,23 @@
 		
     <span class="caption-text">Reference</span>
     <ul class="subnav">
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="api-reference/">API reference</a>
+    <a class="current" href="./">API reference</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#api-reference">API reference</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#methods">Methods</a></li>
+        
+            <li><a class="toctree-l4" href="#objects">Objects</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -106,7 +106,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Project OMEGA</a>
+        <a href="..">Project OMEGA</a>
       </nav>
 
       
@@ -114,15 +114,15 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".">Docs</a> &raquo;</li>
+    <li><a href="..">Docs</a> &raquo;</li>
     
       
         
-          <li>Home &raquo;</li>
+          <li>Reference &raquo;</li>
         
       
     
-    <li>About</li>
+    <li>API reference</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -132,14 +132,28 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="welcome">Welcome</h1>
-<p>Welcome to the documentation of Project OMEGA, <a href="https://github.com/sporeball">sporeball</a>'s first Arduino project!</p>
-<h2 id="about-project-omega">About Project OMEGA</h2>
-<p>Contrary to its name, Project OMEGA is a tiny game console, powered by the <a href="https://www.adafruit.com/product/2590">Adafruit METRO Mini</a> and an 8x8 LED matrix. The hope is that this minimal setup can result in a board that's easy to write code for and fun to play games with.</p>
-<p>All of the code driving Project OMEGA, as well as this documentation, is <a href="https://github.com/sporeball/project-omega">available on GitHub</a>! Anyone is welcome to contribute.</p>
-<h2 id="getting-started">Getting started</h2>
-<p>Check out the <a href="getting-started/">getting started</a> tutorial for a step-by-step guide to writing your first game!</p>
-<p>Alternatively, dive straight into the <a href="api-reference/">API reference</a> to learn about everything you can do with Project OMEGA.</p>
+                <h1 id="api-reference">API reference</h1>
+<p>This page contains the API reference for Project OMEGA.</p>
+<h2 id="methods">Methods</h2>
+<ul>
+<li><strong>void</strong> init()</li>
+</ul>
+<p>Sets the proper data transmission rate, and initializes the display and buttons. This function should be called first.</p>
+<ul>
+<li><strong>void</strong> splash()</li>
+</ul>
+<p>Accesses the display, drawing a bitmap of the omega symbol to it, before running the rest of your code.</p>
+<ul>
+<li><strong>int</strong> poll()</li>
+</ul>
+<p>Returns an integer from 4 to 8 inclusive if a button has just been pressed, or 0 if no button press is detected. The select button is associated with the lowest value of 4, followed by the right, up, left, and down buttons.</p>
+<p>You should write your own function to determine how this should make your game behave, then call it repeatedly using <code>void update()</code>.</p>
+<h2 id="objects">Objects</h2>
+<ul>
+<li><code>matrix</code></li>
+</ul>
+<p>The display.</p>
+<p>For a detailed description of the available graphics primitives, <a href="https://learn.adafruit.com/adafruit-gfx-graphics-library/graphics-primitives">read Adafruit's guide</a>.</p>
               
             </div>
           </div>
@@ -147,8 +161,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="getting-started/" class="btn btn-neutral float-right" title="Getting started">Next <span class="icon icon-circle-arrow-right"></span></a>
       
+        <a href="../getting-started/" class="btn btn-neutral" title="Getting started"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -174,14 +188,14 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
+        <span><a href="../getting-started/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-        <span style="margin-left: 15px"><a href="getting-started/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
-    <script>var base_url = '.';</script>
-    <script src="js/theme.js" defer></script>
-      <script src="search/main.js" defer></script>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
 
 </body>
 </html>
