@@ -1,7 +1,7 @@
 /*
   Omega.cpp
   collection of constant code for project OMEGA
-  created by sporeball
+  copyright (c) 2021 sporeball
   MIT license
 */
 
@@ -43,7 +43,7 @@ void Omega::init() {
   _leftDebouncer.interval(50);
   _downDebouncer.attach(8, INPUT_PULLUP);
   _downDebouncer.interval(50);
-  
+
   Serial.begin(9600);
   matrix.begin(0x70);
 }
@@ -74,7 +74,7 @@ int Omega::poll() {
   _upDebouncer.update();
   _leftDebouncer.update();
   _downDebouncer.update();
-  
+
   if (_selectDebouncer.fell()) {
     return 4;
   } else if (_rightDebouncer.fell()) {

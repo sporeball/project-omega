@@ -1,7 +1,7 @@
 /*
   Omega.h
   collection of constant code for project OMEGA
-  created by sporeball
+  copyright (c) 2021 sporeball
   MIT license
 */
 
